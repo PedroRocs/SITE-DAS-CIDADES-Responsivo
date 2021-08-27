@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/*reset*/
+* {
+    /*Representa todo tipo de elemento elemento do HTML*/
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+
+img {
+    max-width: 100%;
+    /*A imagem não passara de 100%*/
+}
+
+ul {
+    list-style: none;
+    /* não deixara*/
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: white!important;
+}
+
+h2 {
+    font-size: 1.5em;
+    /* a cada em é 16px e 1.5 é 24px */
+    color: black;
+}
+
+p {
+    font-size: 1em;
+    color: black;
+}
+/* Menu */
+#menu {
+    --bs-bg-opacity: 0!important;
+    background:rgba(4, 99, 194,1) !important;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+}
+.btn-outline-success{
+color: rgb(255, 255, 255)!important;
+border-color: rgb(25, 135, 84);
+background-color: rgb(25, 135, 84)!important;
+}
+
+.ropdown-item{
+    color: dodgerblue !important; 
+
+}
+.navbar-light .navbar-brand{
+    color: white!important;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+.navbar-light .navbar-brand:hover{
+    color: dodgerblue !important; 
+  
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff!important;
+}
+
+/*Cabecalho*/
+.cabecalho {
+    padding: 21% 100px;
+    background-image: url(/IMAGENS/carrosel2.jpg);
+    height: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-size: contain;
+}
+
+.cabecalho h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 6%;
+}
+
+.cabecalho a {
+    padding: 10px;
+    background-color: dodgerblue;
+    max-width: max-content;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.cabecalho a:hover {
+    color: white !important;
+    background-color: rgb(7, 86, 165);
+    transition: 1s;
+
+}
+
+/* Conteudo principal*/
+.conteudo {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 40px 2%;
+}
+
+.conteudo p{
+    font-size: 1.3em;
+}
+
+.conteudo h2 {
+    margin-bottom: 5%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.links{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+
+.links a{
+    padding: 15px;
+    background-color: dodgerblue;
+    margin-right: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    max-width: max-content;
+    margin:  10px auto;
+   color: white;
+   text-decoration: none; 
+   border-radius: 4px;
+   transition: 1s;
+}
+
+.links a:hover{
+    color: white!important;
+    background-color: rgb(7, 86, 165)!important;
+    transition: 1s;
+}
+
+/* Carrossel */
+#carouselExampleCaptions{
+    margin-top: 5%!important;
+}
+#caption p,
+h5 {
+    color: white !important;
+    font-weight: bold !important;
+}
+
+#carouselExampleCaptions {
+    width: 70%;
+    margin: auto;
+}
+
+
+
+#carouselExampleCaptions img {
+    transition: 1s;
+}
+
+#carouselExampleCaptions img:hover {
+    filter: brightness(30%);
+    transition: 1s;
+}
+
+/* Hinos */
+.hinos h1{
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    padding: 8% 0px;
+    color: white;
+}
+.hinos{
+    width: 100%;
+    display: flex;
+   align-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+
+    
+   
+  
+}
+
+.hinos-f{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    text-align: center;
+    background-color: darkcyan;
+    width: 100%;
+    padding: 5% 0px;
+    
+    
+}
+
+.hinos-f pre{
+    
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 1.3em;
+}
+  
+.linkshino{
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+.hinos-f a{
+padding: 10px;
+background-color: #fff;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+.hinos-f a:hover{
+    color: black!important;
+}
+
+@media screen and (max-width:360px) {
+    /* menu */
+    #menu a{
+        color: white;
+        font-weight: bold;
+        font-size: 0.6em;
+    
+    }
+
+    /* cabecalho */
+    .cabecalho {
+        padding: 20% ;
+        background-image: url(/IMAGENS/carrosel2.jpg);
+        height: auto;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        background-size: contain;
+        width: 100%;
+    }
+    
+
+    .cabecalho h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #fff;
+        margin-bottom: 6%;
+    }
+
+  .cabecalho a {
+    padding: 10px;
+    background-color: dodgerblue;
+    max-width: max-content;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+  }
