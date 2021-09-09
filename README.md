@@ -6,8 +6,7 @@
 ### O Site traz informações sobre as 10 principais cidades do Estado de  São Paulo e curiosidades sobre essas cidades e histórias de cada uma. 
 
    >AUTORES GITHUBS: 
- - https://github.com/Escravo
- - https://github.com/SergioBALucas
+ 
  - https://github.com/PedroRocs
- - https://github.com/Thiagozera
+
 
